@@ -278,7 +278,21 @@ main {
 }
 @media (max-width:576px) {
     .hero-left h1 {
-        font-size: 25px;
+        font-size: 22px;
         line-height: 20px;
+    }
+    .services div {
+        margin: 25px;
+        text-align: center;
+    }
+    .services-header h2 {
+        font-size: 30px;
+    }
+    .services-header p {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .services div h4 {
+        margin: 10px;
     }
 }
