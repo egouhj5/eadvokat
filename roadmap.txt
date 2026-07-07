@@ -20,3 +20,16 @@ main page:
 
 
 rewrite services (rephrase)
+
+
+
+
+optimisations :
+
+No Horizontal Scrolling: A user should never have to scroll left or right to see content on mobile.
+
+Tap Targets: Buttons and links must be large enough (at least 48x48 pixels) and have enough space around them so users don't accidentally tap the wrong link.
+
+Font Sizes: Text should never drop below 12px (ideally stay at 16px for body text on mobile) so users don't have to pinch-to-zoom.
+
+Test with Google Search Console: Once your site is live, use Google Search Console's "URL Inspection" tool to verify that Google considers your pages mobile-friendly.
