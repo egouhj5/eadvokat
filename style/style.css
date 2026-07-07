@@ -60,7 +60,8 @@ main {
 }
 .hero {
     background: url("../assests/background-test.jpg") no-repeat;                                                                                        
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
     margin: 0;
     padding: 70px;
     height: 600px;
