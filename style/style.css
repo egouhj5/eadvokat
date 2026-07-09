@@ -88,13 +88,6 @@ header .current {
     border: 3px solid #1b6044;
     border-radius: 5px;
 }
-.header-contacts {
-    color: #1b6044;
-    font-size: 16px;
-    background: none;
-    border: none;
-    font-weight: bold;
-}
 .header-menu-contacts {
     color: #1b6044;
     font-size: 16px;
@@ -105,11 +98,28 @@ header .current {
     border-top: 3px solid #1b6044;
     padding: 20px 20px 20px 0;
     text-align: left;
+    border-radius: 0;
+    font-family: "Chiron GoRound TC", sans-serif;
+}
+.header-menu-contacts:hover {
+    border: none;
+    border-top: 3px solid #1b6044;
+}
+.header-contacts {
+    color: #1b6044;
+    font-size: 16px;
+    background: none;
+    border: none;
+    font-weight: bold;
+    border-radius: none;
+    font-family: "Chiron GoRound TC", sans-serif;
+}
+.header-contacts:hover {
+    border: none;
 }
 .hero-section {
     padding: 0;
     margin: 0;
-    border-bottom: 2px solid #dc9f4e;
 }
 .hero {
     background: linear-gradient(206deg,rgba(24, 36, 31, 1) 21%, rgba(24, 92, 58, 1) 58%, rgba(41, 87, 63, 1) 81%, rgba(46, 84, 61, 1) 100%);                                                                         
@@ -134,9 +144,7 @@ header .current {
     margin: 0;
     flex: 1;
 }
-/* .hero h1 span {
-    color: #dc9f4e;
-} */
+
 .hero p {
     flex: 1;
     color: #a18d64;
@@ -221,6 +229,8 @@ header .current {
     flex-wrap: wrap;
     gap: 15%;
     background: linear-gradient(227deg,rgb(189, 157, 92) 10.5%, rgb(232, 204, 138) 24.5%, rgb(189, 157, 92) 50%, rgb(189, 157, 92) 60%, rgb(232, 204, 138) 70%, rgb(154, 107, 59) 100%);
+    border-top: solid 2px #f1c080;
+    border-bottom: solid 2px #f1c080;
 }
 .stats div {
     display: flex;
