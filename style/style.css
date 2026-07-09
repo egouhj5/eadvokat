@@ -30,7 +30,7 @@ header {
     height: 45px;
     background: none;
     border: none;
-} 
+}
 main {
     margin-top: 50px;
 }
@@ -75,6 +75,8 @@ header a {
     display: none;
     flex-direction: column;
     gap: 5px;
+    opacity: 0;
+    position: absolute;
 }
 header a:hover {
     color: #1b6044;
@@ -92,6 +94,17 @@ header .current {
     background: none;
     border: none;
     font-weight: bold;
+}
+.header-menu-contacts {
+    color: #1b6044;
+    font-size: 16px;
+    background: none;
+    border: none;
+    font-weight: bold;
+    margin-top: 20px;
+    border-top: 3px solid #1b6044;
+    padding: 20px 20px 20px 0;
+    text-align: left;
 }
 .hero-section {
     padding: 0;
@@ -337,14 +350,14 @@ header .current {
     }
 }
 @media (max-width: 1106px) {
-    .menu-button {
-        display: flex;
-    }
     .navigation {
         display: none;
     }
     .header-contacts {
         display: none;
+    }
+    .menu-button {
+        display: flex;
     }
     header {
         display: flex;
@@ -354,4 +367,26 @@ header .current {
     .logo {
         width: 100%;
     }
+    .header-menu-navigation {
+        opacity: 1;
+        position: initial;
+    }
+}
+.menu-icon .icon-line,
+.menu-icon .icon-dot {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  transform-origin: center;
+}
+.menu-icon.is-active .icon-dot {
+  opacity: 0;
+}
+.menu-icon.is-active .line-middle {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.menu-icon.is-active .line-top {
+  transform:  rotate(45deg) scale(1.5) translateX(0) translateY(100px);
+}
+.menu-icon.is-active .line-bottom {
+  transform: translateX(-40px) rotate(-45deg) scale(1.5) translateY(-65px);
 }
