@@ -592,6 +592,10 @@ header .current {
     font-size: 16px;
     text-transform: none;
 }
+.articles-page-title {
+    max-width: 100%;
+    width: 100%;
+}
 .services-page-services a {
     margin: 0;
     align-self: center;
@@ -677,8 +681,9 @@ header .current {
         line-height: 30px;
     }
     .articles div {
-        max-width: calc(80% - 40px);
-        width: calc(80% - 40px);
+        max-width: 100%;
+        width: 100%;
+        margin: 50px 0;
     }
 }
 @media (max-width:576px) {
