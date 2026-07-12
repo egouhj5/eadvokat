@@ -684,8 +684,10 @@ header .current {
         margin: 25px;
         text-align: center;
     }
-    .services-header h2 {
+    .services-header h2,
+    .articles-header h2 {
         font-size: 30px;
+        text-align: center;
     }
     .services-header p {
         font-size: 16px;
