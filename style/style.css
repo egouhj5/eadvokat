@@ -721,9 +721,9 @@ header .current {
     border: none;
     margin: auto;
 }
-.services-page-title h3,
-.articles-page-title h3,
-.article-page-title h3 {
+.services-page-title h1,
+.articles-page-title h1,
+.article-page-title h1 {
     background: linear-gradient(227deg,rgba(201, 170, 108, 1) 21%, rgba(239, 217, 167, 1) 49%, rgb(168, 122, 76) 100%);
     background-clip: text;
     color: transparent;
@@ -962,7 +962,7 @@ header .current {
         border-bottom: 2px solid #f1c080;
         width: 100%;
     }
-    .article-page-title h3{
+    .article-page-title h1{
         text-align: left;
     }
     .article-consultation p {
