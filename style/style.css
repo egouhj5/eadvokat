@@ -1032,6 +1032,8 @@ header .current {
     padding: 7px;
     border-radius: 5px;
     border: 1px solid #c9aa6cc2;
+    min-height: 30px;
+    min-width: 30px;
 }
 .contacts-page-contacts-left .contacts-page-messengers {
     display: flex;
@@ -1169,6 +1171,18 @@ header .current {
     .services-page-services-card {
         min-width: 0;
         max-width: 500px;
+    }
+    .contacts-page {
+        padding: 10px;
+    }
+    .contacts-page-contacts div{
+        padding: 5px;
+    }
+    .contacts-page .contacts-page-info {
+        font-size: 18px;
+    }
+    .contacts-page-contacts-left div div {
+        gap: 5px;
     }
 }
 @media (max-width: 1109px) {
