@@ -11,23 +11,22 @@ required blocks:
 
 
 main page:
-1. hero 
-2. stats
-3. services
-4. won cases
-5. about me
+1. hero -
+2. stats -
+3. services -
+4. won cases -
+5. about me 
 6. 
 
 
 rewrite services (rephrase)
 
 11.07 {
-    header/footer file split - not needed but optimization in mind
 
-    articles
+    articles -
 }
 12.07 {
-    cases-won
+    cases-won -
 }
 
 !!!ask for legal-consultations!!!

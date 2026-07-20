@@ -13,12 +13,13 @@ header {
     width: 100%;
     box-sizing: border-box;
     position:fixed;
-    top: 0;
+    top: -400px;
     left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    padding-top: 420px;
     margin: 0px;
     border-bottom: 2px solid #f1c080;
     background: linear-gradient(227deg,rgb(189, 157, 92) 10.5%, rgb(232, 204, 138) 24.5%, rgb(189, 157, 92) 50%, rgb(189, 157, 92) 60%, rgb(232, 204, 138) 70%, rgb(154, 107, 59) 100%);
@@ -316,7 +317,8 @@ header .current {
 .services-section,
 .articles-section,
 .cases-section,
-.reviews-section {
+.reviews-section,
+.advantages-section {
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -325,21 +327,27 @@ header .current {
     position: relative;
     background: linear-gradient(45deg,rgba(24, 36, 31, 1) 21%, rgba(24, 92, 58, 1) 58%, rgba(41, 87, 63, 1) 81%, rgba(46, 84, 61, 1) 100%);
 }
+.advantages-section {
+    border-top: 2px solid #C9AA6C;
+}
 .services-section p,
 .articles-section p,
 .cases-section p,
-.reviews-section p {
+.reviews-section p,
+.advantages-section p {
     color: #a18d64;
     font-size: 16px;
     font-family: "Huninn", sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0;
+    text-align: center;
 }
 .services-section h2,
 .articles-section h2,
 .cases-section h2,
-.reviews-section h2 {
+.reviews-section h2,
+.advantages-section h2 {
     background: linear-gradient(227deg,rgba(201, 170, 108, 1) 21%, rgba(239, 217, 167, 1) 49%, rgb(168, 122, 76) 100%);
     background-clip: text;
     color: transparent;
@@ -710,6 +718,16 @@ header .current {
     z-index: 0;
     border-bottom: 2px solid #C9AA6C;
     background: linear-gradient(rgba(169, 140, 83, 0.951) 0%, rgba(201, 170, 108, 0) 60%);
+}
+.advantages-title {
+    background-color: #eec16770;
+    box-shadow: 0px 0px 12px 6px #EEC16770;
+    padding: 20px 0;
+    border-radius: 10px;
+    border: 2px solid #C9AA6C;
+}
+.advantages-title p {
+    color: #C9AA6C;
 }
 .article-page .article-page-description {
     border-bottom: 2px solid #C9AA6C;
