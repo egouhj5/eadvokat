@@ -365,10 +365,11 @@ header .current {
 .advantages-cards {
     margin-top: 40px;
     padding: 20px;
+    width: 100%;
     display: flex;
     gap: 5%;
     justify-content: center;
-    align-items: stretch center;
+    align-items: stretch;
     flex-wrap: wrap;
 }
 .advantages-cards div {
