@@ -12,6 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Cormorant+SC:wght@300;400;500;600;700&family=Gabriela&family=Huninn&family=Orelega+One&family=Poppins:wght@300&display=swap" rel="stylesheet">  
     <title>Професійна юридична допомога по всій Україні</title>
     <script src="js/navigation-menu.js" defer></script>
+        <script>
+        fetch('assets/svg/svg.html')
+        .then(response => response.text())
+        .then(data => {
+            const div = document.createElement('div');
+            div.style.display = 'none';
+            div.innerHTML = data;
+            document.body.insertBefore(div, document.body.firstChild);
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -160,13 +170,14 @@
         </section>
         <section class="advantages-section">
             <div class="advantages-title">
-                <h2>важлива інформація</h2>
                 <p>Потрібно знати</p>
+                <h2>важлива інформація</h2>
             </div>
             <div class="advantages-cards">
                 <div>
-                    <h3></h3>
-                    <p></p>
+                    <svg width="30" height="30" viewBox="0 0 16 16" fill="#1a4735"><use href="#clock-icon"/></svg>
+                    <h3>hhhh</h3>
+                    <p>ipoipoioi</p>
                 </div>
                 <div>
                     <h3></h3>
