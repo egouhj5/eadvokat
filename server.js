@@ -28,17 +28,7 @@ app.post('/submit-form', (req, res) => {
         subject: `Ви отримали запит на безкоштовну консультацію від: ${userName}`,
         text: `You have received a new lead:\n\nІм'я: ${userName}\n\nНомер телефону: ${userPhone}\n\nПошта: ${userEmail}\n\nСитуація: ${userSit}`
     };
-
-    // We wait for the email to send before telling the user anything
     transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            console.log("Email Error:", error);
-            // Send a 500 (Server Error) status with a clear message
-            return res.status(500).send("Не вдалося надіслати повідомлення через збій пошти.");
-        }
-        
-        console.log("Email sent successfully: " + info.response);
-        // Send a 200 (OK) status message only on success
         res.status(200).send("Дякуємо! Ваша інформація успішно надіслана.");
     });
 });

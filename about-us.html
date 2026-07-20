@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ми юридична компанія яка має понад 15 років досвіду та більше ніж 500 виграних справа ще ми готові...">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/jpg" href="assets/favicon.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Cormorant+SC:wght@300;400;500;600;700&family=Gabriela&family=Huninn&family=Orelega+One&family=Poppins:wght@300&display=swap" rel="stylesheet">  
+    <title>Про нас</title>
+    <script src="js/navigation-menu.js" defer></script>
+    <script>
+        fetch('assets/svg/svg.html')
+        .then(response => response.text())
+        .then(data => {
+            const div = document.createElement('div');
+            div.style.display = 'none';
+            div.innerHTML = data;
+            document.body.insertBefore(div, document.body.firstChild);
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" class="logo-logo">Law com.Alex <span>G</span>roup</a>
+            <button class="menu-button">
+                <svg class="menu-icon" fill="#1b6044" version="1.1" id="Layer_1" xmlns="http://w3.org" xmlns:xlink="http://w3.org" viewBox="0 0 377 377" xml:space="preserve" width="100%" height="100%">
+                    <g>
+                        <circle class="icon-dot dot-top" cx="15" cy="88.5" r="15"/>
+                        <rect class="icon-line line-top" x="75" y="73.5" width="250" height="30"/>
+                        
+                        <circle class="icon-dot dot-bottom" cx="15" cy="288.5" r="15"/>
+                        <rect class="icon-line line-bottom" x="75" y="273.5" width="250" height="30"/>
+                        
+                        <circle class="icon-dot dot-middle" cx="15" cy="188.5" r="15"/>
+                        <rect class="icon-line line-middle" x="75" y="173.5" width="250" height="30"/>
+                    </g>
+                </svg>
+            </button>
+        </div>
+        <nav class="navigation">
+            <a href="index.html">Головна</a>
+            <a href="services.html">Послуги</a>
+            <a href="articles.html">Статті</a>
+            <a href="cases.html">Виграні справи</a>
+            <a href="about-us.html" class="current" >Про нас</a>
+            <a href="contacts.html">Контакти</a>
+        </nav>
+        <a class="header-contacts" href="tel:+380992873957">+380-99-287-39-57</a>
+            <nav class="header-menu-navigation">
+                <a href="index.html">Головна</a>
+                <a href="services.html">Послуги</a>
+                <a href="articles.html">Статті</a>
+                <a href="cases.html">Виграні справи</a>
+                <a href="about-us.html" class="current">Про нас</a>
+                <a href="contacts.html">Контакти</a>
+                <a class="header-menu-contacts" href="tel:+380992873957">+380-99-287-39-57</a>
+            </nav>
+    </header>
+    <main>
+        <section class="about-us-page">
+            <div class="about-us-info">
+                <p>хто ми такі</p>
+                <h1>Ми компанія Law com.Alex <span>G</span>roup</h1>
+                <p>Наша компанія спеціалізується на наданні професійної правової допомоги, адвокатського супроводу та консалтингових послуг. Ми ефективно представляємо та захищаємо права й законні інтереси фізичних осіб і суб'єктів господарювання у взаємовідносинах із державними органами, зокрема в судах, правоохоронних органах, органах Державної податкової служби, митних органах, органах державної виконавчої служби, а також в інших установах державної влади.</p>
+                <div>
+                    <a href="">Консультація</a>
+                    <a href="">Зателефонйте нам</a>
+                </div>
+            </div>
+            <div class="about-us-image">
+                <img src="assets/hero-image.jpg" alt="">
+            </div>
+        </section>
+                <section class="stats">
+            <div>
+                <h4>15+</h4>
+                <p>Років досвіду</p>
+            </div>
+            <div>
+                <h4>500+</h4>
+                <p>Виграних справ</p>
+            </div>
+            <div>
+                <h4>98%</h4>
+                <p>Задоволених клієнтів</p>
+            </div>
+            <div>
+                <h4>24/7</h4>
+                <p>Підтримка</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
