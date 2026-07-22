@@ -307,15 +307,15 @@ header .current {
     color: #1b6044;
     font-family: "Gabriela", serif;
     font-weight: bold;
-    font-size: 35px;
 }
 .stats p {
     font-size: 20px;
     margin: 0;
 }
-.stats h4 {
+.stats h2 {
     margin: 0;
     padding: 0;
+    font-size: 35px ;
 }
 .services-section,
 .articles-section,
@@ -499,7 +499,8 @@ header .current {
     color: #cfb586;
 }
 .services h3,
-.articles h4,
+.articles h3,
+.articles div h2,
 .cases-section-cases h4,
 .cases-page h4 {
     background: linear-gradient(227deg,rgba(201, 170, 108, 1) 21%, rgba(239, 217, 167, 1) 49%, rgb(168, 122, 76) 100%);
@@ -852,7 +853,6 @@ header .current {
     box-shadow: 0 0 10px 1px #C9AA6C;
     text-wrap-mode: nowrap;
 }
-.about-us-info span::-webkit-scrollbar-track-piece
 .services-page-services {
     display: flex;
     flex-wrap: wrap;
@@ -1231,6 +1231,9 @@ header .current {
     display: flex;
     align-items: center;
     gap: 5px;
+}
+.about-us-page-section p svg {
+    min-width: 30px;
 }
 @media (max-width: 1573px) {
     .article-page,
