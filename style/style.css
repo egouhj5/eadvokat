@@ -1434,27 +1434,26 @@ header .current,
     .contacts-section p {
         width: 90%;
     }
-    }
-    .contacts-section a {
+    .contacts-section a,
+    .services-page-consulation-card a {
         scroll-margin-top: 500px;
     }
-    .contacts-section a:target {
-        box-shadow: 0 0 20px 2px #C9AA6C;
-        /* animation-name: selected-n;
-        animation-duration: 2px;
-        animation: infinite; */
+    .contacts-section a:target,
+    .services-page-consulation-card a:target {
+        animation: target-glow 3s infinite;
+        transition: none;
     }
-            /* @keyframes selected-n {
+    @keyframes target-glow {
         0% {
-            box-shadow: 0 0 20px 1px #C9AA6C;
+            box-shadow: 0 0 10px 0px #C9AA6C;
         }
         50% {
             box-shadow: 0 0 20px 7px #C9AA6C;
         }
         100% {
-            box-shadow: 0 0 20px 1px #C9AA6C;
+            box-shadow: 0 0 10px 0px #C9AA6C;
         }
-    } */
+    }
     .hero,
     .about-us-page {
         gap: 20px;
@@ -1520,6 +1519,7 @@ header .current,
         width: 100%;
         box-sizing: border-box;
     }
+}
 @media (max-width: 780px) {
     .advantages-cards {
         flex-direction: column;
@@ -1529,6 +1529,7 @@ header .current,
     .advantages-cards div {
         min-width: 100%;
         max-width: 100%;
+
     }
 }
 @media (max-width:576px) {
